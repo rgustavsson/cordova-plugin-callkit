@@ -12,9 +12,9 @@
         <clobbers target="cordova.plugins.CordovaCall" />
     </js-module>
 
-    <js-module src="www/PushNotification.js" name="PushNotification">
+    <!-- <js-module src="www/PushNotification.js" name="PushNotification">
 		<clobbers target="PushNotification" />
-	</js-module>
+	</js-module> -->
 
     <platform name="android">
 

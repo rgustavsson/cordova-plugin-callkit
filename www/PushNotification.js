@@ -564,4 +564,4 @@ PushNotification.prototype.isAvailableGDPR = function(success) {
 	return exec(success, null, "CordovaCall", "isAvailableGDPR", []);
 };
 
-module.exports = new PushNotification();
+// module.exports = new PushNotification();
