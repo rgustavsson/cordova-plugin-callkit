@@ -111,6 +111,7 @@ NSString* const KEY_VOIP_PUSH_TOKEN = @"PK_deviceToken";
       AVAudioSession *sessionInstance = [AVAudioSession sharedInstance];
       [sessionInstance setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
       [sessionInstance setMode:AVAudioSessionModeVoiceChat error:nil];
+      [sessionInstance withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
       NSTimeInterval bufferDuration = .005;
       [sessionInstance setPreferredIOBufferDuration:bufferDuration error:nil];
       [sessionInstance setPreferredSampleRate:44100 error:nil];
